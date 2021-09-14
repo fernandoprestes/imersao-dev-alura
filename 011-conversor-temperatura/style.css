@@ -1,19 +1,19 @@
 body {
   font-family: 'Roboto Mono',monospace;
-  height: 90vh;
   background-color: rgb(15, 12, 75);
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 90vh;
 }
 
 .page-logo{
-  width: 200px;
+  width: 150px;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
 }
@@ -21,9 +21,9 @@ body {
 .convert{
   display: flex;
   flex-direction: column;
-  background-color: #8c8ead;
-  padding: 3em;
-  border: 10px solid #2243ff;
+  background: linear-gradient(360deg, rgb(13, 8, 109) 30%, rgb(41, 1, 150) 65%, rgb(16, 24, 170) 95%);
+  padding: 36px;
+  border: 5px solid #2243ff;
   color: #ffffff;
   max-width: 650px;
 }
@@ -31,7 +31,6 @@ body {
 .page-title {
   color: #ffffff;
   font-size: 36px;
-  line-height: 1em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,14 +40,14 @@ body {
 .page-subtitle {
   font-size: 36px;
   margin: 0 auto;
-  line-height: 35px;
+  line-height: 40px;
   margin-bottom: 36px;
 }
 
 .label {
   display: flex;
   align-items: center;
-  margin-bottom: 1.4em;
+  margin-bottom: 15px;
   font-size: 36px;
 }
 
@@ -63,7 +62,8 @@ body {
   font-size: 36px;
 }
 
-.fahrenheit {
+.fahrenheit,
+.kelvin {
   margin-left: 20px;
 }
 
@@ -76,6 +76,7 @@ body {
   font-family: inherit;
   color: #1f1f1f;
   font-size: 36px;
+  font-weight: 700;
   box-shadow: 10px 10px 0 #2243ff;
   cursor: pointer;
   transition: 100ms transform ease-in-out;
