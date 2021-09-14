@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Imersão Dev Alura - Aula 01</title>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        class="page-logo"
+        src="../assets/img/imersaodev.svg"
+        alt="logo imersao dev"
+      />
+      <h1 class="page-title">Calculadora de média</h1>
+      <p class="page-subtitle">
+        Descubra qual a sua média de nota de todas as provas!
+      </p>
+      <form class="form-grades">
+        <label class='form-label 'for="form-name">Nome:</label>
+        <input class="form-input" id="form-name" type="text">
+        <label class='form-label 'for="form-firstGrade">Nota 1:</label>
+        <input class="form-input" id="form-firstGrade" type="number">
+        <label class='form-label 'for="form-secondGrade">Nota 2:</label>
+        <input class="form-input" id="form-secondGrade" type="number">
+        <label class='form-label 'for="form-thirdGrade">Nota 3:</label>
+        <input class="form-input" id="form-thirdGrade" type="number">
+        <label class='form-label 'for="form-fourthGrade">Nota 4:</label>
+        <input class="form-input" id="form-fourthGrade" type="number">
+
+        <div class="wrapper">
+          <p class="user-nome"></p>
+          <p class="user-result"></p>
+          <button class="button">Calcular</button>
+        </div>
+      </form>
+
+    </div>
+    <a href="https://alura.com.br/" target="_blank">
+      <img
+        class="alura-logo"
+        src="https://www.alura.com.br/assets/img/home/alura-logo.svg"
+        alt="logo alura"
+      />
+    </a>
+    <script src="app.js"></script>
+  </body>
+</html>
