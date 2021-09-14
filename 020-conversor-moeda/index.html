@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Imersão Dev Alura - Aula 02</title>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        class="page-logo"
+        src="../assets/img/imersaodev.svg"
+        alt="logo imersao dev"
+      />
+      <h1 class="page-title">Conversor de moeda</h1>
+
+      <div class="convert-wrapper">
+        <form class="convert">
+          <label class="page-subtitle" for="subtitle">
+            Converta os valores de
+          </label>
+          <label class="label" for="realToDollar"
+            >Reais: R$
+            <input class="amount realToDollar" id="realToDollar" type="number" value="0.00" min="0"  />
+          </label>
+          <label class="label" for="inDollar"
+            >em dollars: U$
+            <strong>
+               <output class="output inDollar" id="inDollar">0</output>
+            </strong>
+          </label>
+          <button class="button buttonDollar">Converter</button>
+        </form>
+
+        <form class="convert">
+          <label class="page-subtitle" for="subtitle">
+            Converta os valores de
+          </label>
+          <label class="label" for="realToEuro"
+            >Reais: R$
+            <input class="amount realToEuro" id="realToEuro" type="number" value="0.00" min="0"  />
+          </label>
+          <label class="label" for="inEuro"
+            >em Euros: EU
+            <strong>
+               <output class="output inEuro" id="inEuro">0</output>
+            </strong>
+          </label>
+          <button class="button buttonEuro">Converter</button>
+        </form>
+
+      
+      </div>
+
+
+
+      
+
+
+
+    </div>
+    <a href="https://alura.com.br/" target="_blank">
+      <img
+        src="https://www.alura.com.br/assets/img/home/alura-logo.svg"
+        alt="logo alura"
+        class="alura-logo"
+      />
+    </a>
+    <script src="app.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
