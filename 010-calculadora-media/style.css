@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  border: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -13,16 +13,17 @@ body {
 .container {
   text-align: center;
   padding: 20px;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  height: 100%;
 }
 
-.page-title {
-  color: #ffffff;
-  margin: 0 0 5px;
-}
-
+.page-title,
 .page-subtitle {
   color: #ffffff;
-  margin: 5px 10px;
+  margin: 15px auto;
 }
 
 .page-logo {
@@ -36,9 +37,14 @@ body {
   right: 10px;
 }
 
-.form-grades{
-  width: 300px;
-  background: linear-gradient(360deg, rgb(13, 8, 109) 30%, rgb(41, 1, 150) 65%, rgb(16, 24, 170) 95%);
+.form-grades {
+  width: 420px;
+  background: linear-gradient(
+    360deg,
+    rgb(13, 8, 109) 30%,
+    rgb(41, 1, 150) 65%,
+    rgb(16, 24, 170) 95%
+  );
   border: 5px solid #2243ff;
   padding: 30px 50px;
   display: grid;
@@ -47,20 +53,20 @@ body {
   margin: 0 auto;
 }
 
-.form-label{
+.form-label {
   display: inline-block;
   line-height: 24px;
   color: #fff;
   text-align: left;
 }
 
-.form-input{
+.form-input {
   width: 200px;
   font-size: 18px;
   padding: 2px 5px;
 }
 
-.wrapper{
+.wrapper {
   display: grid;
   margin: 0 auto;
   width: 305px;
@@ -71,7 +77,6 @@ body {
   font-weight: 700;
   color: #fff;
   height: 50px;
-  border: 1px solid #2243ff;
 }
 
 .user-result {
@@ -84,7 +89,7 @@ body {
   height: 30px;
 }
 
-.button{
+.button {
   width: 100%;
   padding: 16px;
   background-color: #ffffff;
