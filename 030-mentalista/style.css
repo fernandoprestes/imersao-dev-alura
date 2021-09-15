@@ -29,7 +29,7 @@ body {
   padding: 15px 36px;
   border: 5px solid #2243ff;
   color: #fff;
-  width: 479px;
+  width: 524px;
 }
 
 .page-title {
@@ -58,13 +58,13 @@ body {
 
 .main-button {
   width: 100%;
-  margin-top: 16px;
+  margin-top:14px;
   margin-bottom: 16px;
   background-color: #ffffff;
   border: none;
   font-family: inherit;
   color: #1f1f1f;
-  font-size: 32px;
+  font-size: 26px;
   font-weight: 700;
   box-shadow: 10px 10px 0 #2243ff;
   cursor: pointer;
@@ -77,7 +77,8 @@ body {
 }
 
 .form-message,
-.form-alert{
+.form-alert,
+.form-error{
   display: block;
   text-align: center;
   font-size: 1.1em;
@@ -90,10 +91,14 @@ body {
   height: 35px;
 }
 
+.form-error{
+  height: 20px;
+}
+
 .main-result{
   display: block;
   color: #fff;
-  font-size: 96px;
+  font-size: 62px;
   margin: 25px 0;
   text-align: center;
 }

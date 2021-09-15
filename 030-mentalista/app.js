@@ -1,8 +1,11 @@
 let numeroSecreto = (Math.random() * 10).toFixed()
 let tentativas = 0
+let totalTentativas = 3
 
-const htmlResultado = document.querySelector('.form-message')
+const htmlMensagem = document.querySelector('.form-message')
+const htmlResult = document.querySelector('.main-result')
 const htmlAlert = document.querySelector('.form-alert')
+const htmlError = document.querySelector('.form-error')
 const btnAdivinhar = document.querySelector('#button-guess')
 const btnSortear = document.querySelector('#button-draw')
 
@@ -13,16 +16,21 @@ btnSortear.disabled = true
 
 btnAdivinhar.addEventListener('click', function (event) {
   event.preventDefault()
-  tentativas++
 
   let numeroDigitado = document.querySelector('.main-input').value
   document.querySelector('.main-input').value = ''
-  document.querySelector('.main-result').textContent = numeroDigitado
-
+  if (numeroDigitado > 10) {
+    htmlError.textContent = `Digite um numero entre 0 e 10!`
+    htmlError.style.background = '#ff0000'
+  } else {
+    tentativas++
+    htmlError.textContent = ''
+    htmlError.style.background = ''
+    htmlResult.textContent = numeroDigitado
+    adivinhar(numeroDigitado)
+  }
   //quantas tentativas tem
   // console.log('T: ' + tentativas)
-
-  adivinhar(numeroDigitado)
 })
 
 let txtMensagem = ''
@@ -32,10 +40,10 @@ function adivinhar(numeroDigitado) {
   if (tentativas < 3) {
     if (numeroDigitado > numeroSecreto) {
       txtMensagem = 'O numero secreto é menor'
-      txtAlert = 'Voce tem ' + (3 - tentativas) + ' tentativas'
+      txtAlert = 'Voce tem ' + (totalTentativas - tentativas) + ' tentativas'
     } else if (numeroDigitado < numeroSecreto) {
       txtMensagem = 'O numero secreto é maior'
-      txtAlert = 'Voce tem ' + (3 - tentativas) + ' tentativas'
+      txtAlert = 'Voce tem ' + (totalTentativas - tentativas) + ' tentativas'
     } else {
       txtMensagem = 'Voce acertou!'
       txtAlert = 'Sortear novo numero?'
@@ -61,7 +69,7 @@ function adivinhar(numeroDigitado) {
     btnDisable()
   }
 
-  htmlResultado.innerHTML = txtMensagem
+  htmlMensagem.innerHTML = txtMensagem
   htmlAlert.innerHTML = txtAlert
 }
 
