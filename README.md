@@ -33,6 +33,11 @@
           btnSortear.disabled = true
         ```
     - [x] Diferença de <code>==</code> e <code>===</code>
-4. asd 
+4. :books: Array, list
+    - :clapper: AluraFlix
+      - [x] Utilizar método <code>Array.push</code> para inserir filme na lista
+      - [x] Tamanho da lista <code>Array.length</code>
+      - [x] Selecionar elementos <code>Array\[element]</code>
+      - [x] Verificar se já tem um elemento na lista <code>Array.includes(elemento)</code>;
 5. ad 
 6. asd 
