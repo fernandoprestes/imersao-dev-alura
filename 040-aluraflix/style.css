@@ -1,0 +1,135 @@
+:root {
+  --color-background: rgb(15, 12, 75);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  background-color: var(--color-background);
+  display: grid;
+  place-items: center;
+}
+
+.page-logo {
+  width: 200px;
+  margin-bottom: 25px;
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px auto;
+}
+
+.page-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  margin: 5px auto 15px;
+  color: #bb1c1c;
+}
+
+input[type='text'] {
+  display: block;
+  margin: 0 auto;
+  height: 34px;
+  width: 300px;
+  text-align: center;
+}
+
+.button {
+  display: block;
+  text-align: center;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 22px;
+  margin: 0 auto;
+  margin-top: 15px;
+  height: 34px;
+  width: 300px;
+  background: #fff;
+  color: #1f1f1f;
+  text-transform: uppercase;
+  border: none;
+  box-shadow: 5px 5px 0 #2243ff;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: scale(1.01);
+  color: #2243ff;
+}
+
+.txtAlert {
+  margin: 15px 0;
+  color: #bb1c1c;
+  height: 24px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.movie-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 6.5rem;
+}
+
+@media (min-width: 479px) {
+  .movie-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .movie-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .movie-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.movie-list .movie-item {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.movie-item {
+  word-wrap: break-word;
+  color: #fff;
+  text-align: center;
+}
+
+.movie-banner img {
+  width: 200px;
+  box-shadow: 5px 5px #2243ff;
+}
+
+.movie-title{
+  color: #fff;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.movie-list img:hover {
+  transform: scale(1.01);
+  cursor: pointer;
+}
