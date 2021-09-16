@@ -14,7 +14,8 @@ body {
 }
 
 .page-logo {
-  width: 150px;
+  width: 200px;
+  margin-bottom: 25px;
 }
 
 .container {
