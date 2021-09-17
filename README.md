@@ -41,6 +41,9 @@
 5.  Funções
       - [x] Criação de funções
       - [x] Remover um filme da lista <code> element.parentNode.remove()</code>
+
+      ![tela do aluraflix]('./040-aluraflix/home-aluraflix.gif')
+
 6. asd
 7. 
 8. 
