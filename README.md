@@ -40,8 +40,8 @@
       - [x] Verificar se já tem um elemento na lista <code>Array.includes(elemento)</code>;
 5.  Funções
       - [x] Criação de funções
-      - [x] Remover um filme da tela <code> element.parentNode.remove()</code>
-      - [x] Remover um filme da lista <code>Array.splice(index, 1)<code>
+      - [x] Remover um filme da tela <code>element.parentNode.remove()</code>
+      - [x] Remover um filme da lista <code>Array.splice(index, 1)</code>
       1. Captura da tela:
       
       <span style="display:block;width:300px; margin:0 auto">![tela do aluraflix](040-aluraflix/home-aluraflix.gif)</span>
