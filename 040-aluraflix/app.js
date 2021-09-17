@@ -36,9 +36,10 @@ function adicionarFilme() {
   buscarFilme(nomeFilme)
 }
 
-function listarFilmes(banner, titulo){
+function listarFilmes(banner, titulo) {
   divImg.innerHTML += htmlImg(banner, titulo)
   listaFilmesAdicionados.push(titulo)
+  remover()
 }
 
 function buscarFilme(nomeFilme) {
@@ -61,11 +62,28 @@ function buscarFilme(nomeFilme) {
     })
 }
 
+function remover() {
+  let spanRemove = document.querySelectorAll('.movie-delete')
+  for (i = 0; i < spanRemove.length; i++) {
+    spanRemove[i].addEventListener('click', event => {
+      const element = event.target
+      rmDivFilmes = element.parentNode.lastElementChild.innerText
+      let index = listaFilmesAdicionados.indexOf(rmDivFilmes)
+      listaFilmesAdicionados.splice(index, 1)
+      element.parentNode.remove()
+    })
+  }
+}
+
 function htmlImg(urlFilme, urlNomeFilme) {
   return `
+    
     <div class="movie-item">
+      <span class="movie-delete"></span>
       <a class="movie-banner" title='${urlNomeFilme}'>
-        <img src="${urlImgDefault + urlFilme}" alt="banner do filme ${urlNomeFilme}">
+        <img src="${
+          urlImgDefault + urlFilme
+        }" alt="banner do filme ${urlNomeFilme}">
       </a>
       <p class="movie-title">${urlNomeFilme}</p>
     </div>
