@@ -9,16 +9,16 @@
 ## Aulas
 
 1. :1234: Variaveis, operacções e média
-   - :abacus: Caculadora média
-     - [x] Entender as diferenças entre HTML, CSS e JavaScript;
-     - [x] Variáveis, manipulação dos valores armazenados e a memória do computador;
-     - [x] Tipos de variáveis (texto e inteiro);
-     - [x] console.log, alert();
-     - [x] Entrada de dados e formulario;
-     - [x] Fixando a quantidade de casas decimais com a função toFixed();
-     - [x] Uso de condição (if...else);
-   - :thermometer: Conversor de temperatura
-     - [x] Graus Celsius para Graus Fahrenheit e Kelvin
+   1. :abacus: Caculadora média
+      - [x] Entender as diferenças entre HTML, CSS e JavaScript;
+      - [x] Variáveis, manipulação dos valores armazenados e a memória do computador;
+      - [x] Tipos de variáveis (texto e inteiro);
+      - [x] console.log, alert();
+      - [x] Entrada de dados e formulario;
+      - [x] Fixando a quantidade de casas decimais com a função toFixed();
+      - [x] Uso de condição (if...else);
+   2. :thermometer: Conversor de temperatura
+      - [x] Graus Celsius para Graus Fahrenheit e Kelvin
 2. :moneybag: Conversor de moedas
    - [x] Interagindo com usuário através do input
    - [x] Utilização de funções
@@ -31,18 +31,20 @@
    - [x] Desabilitar botão quando acabar as tentativas <code>btnSortear.disabled = true</code>
    - [x] Diferença de <code>==</code> e <code>===</code>
 4. :books: Array, list
-   - :clapper: AluraFlix
-     - [x] Utilizar método <code>Array.push()</code> para inserir filme na lista
-     - [x] Verificar se o filme ja foi incluido com <code>Array.includes()</code>
-     - [x] Tamanho da lista <code>Array.length</code>
-     - [x] Selecionar elementos <code>Array\[element]</code>
-     - [x] Interarindo com <code>for</code> e exibindo filmes na página
-     - [x] Verificar se já tem um elemento na lista <code>Array.includes(elemento)</code>;
+   1. :clapper: AluraFlix
+      - [x] Utilizar método <code>Array.push()</code> para inserir filme na lista
+      - [x] Verificar se o filme ja foi incluido com <code>Array.includes()</code>
+      - [x] Tamanho da lista <code>Array.length</code>
+      - [x] Selecionar elementos <code>Array\[element]</code>
+      - [x] Interarindo com <code>for</code> e exibindo filmes na página
+      - [x] Verificar se já tem um elemento na lista <code>Array.includes(elemento)</code>;
 5.  Funções
       - [x] Criação de funções
-      - [x] Remover um filme da lista <code> element.parentNode.remove()</code>
-
-      ![tela do aluraflix](040-aluraflix/home-aluraflix.gif)
+      - [x] Remover um filme da tela <code> element.parentNode.remove()</code>
+      - [x] Remover um filme da lista <code>Array.splice(index, 1)<code>
+      1. Captura da tela:
+      
+      <span style="display:block;width:300px; margin:0 auto">![tela do aluraflix](040-aluraflix/home-aluraflix.gif)</span>
 
 6. asd
 7. 
