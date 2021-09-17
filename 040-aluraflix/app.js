@@ -67,9 +67,9 @@ function remover() {
   for (i = 0; i < spanRemove.length; i++) {
     spanRemove[i].addEventListener('click', event => {
       const element = event.target
-      rmDivFilmes = element.parentNode.lastElementChild.innerText
-      let index = listaFilmesAdicionados.indexOf(rmDivFilmes)
-      listaFilmesAdicionados.splice(index, 1)
+      tituloFilmeRmv = element.parentNode.lastElementChild.innerText
+      let indexFilme = listaFilmesAdicionados.indexOf(tituloFilmeRmv)
+      listaFilmesAdicionados.splice(indexFilme, 1)
       element.parentNode.remove()
     })
   }
