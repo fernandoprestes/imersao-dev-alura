@@ -38,7 +38,7 @@
       - [x] Selecionar elementos <code>Array\[element]</code>
       - [x] Interarindo com <code>for</code> e exibindo filmes na página
       - [x] Verificar se já tem um elemento na lista <code>Array.includes(elemento)</code>;
-5.  Funções
+5. :books: Funções
       - [x] Criação de funções
       - [x] Remover um filme da tela <code>element.parentNode.remove()</code>
       - [x] Remover um filme da lista <code>Array.splice(index, 1)</code>
@@ -46,7 +46,13 @@
       
       <span style="display:block;width:300px; margin:0 auto">![tela do aluraflix](040-aluraflix/home-aluraflix.gif)</span>
 
-6. asd
+6. :bar_chart: Objetos e tabelas
+      1. Tabela de classificação e pontos
+         - [x] Objeto em javascript
+         - [x] Função recebe objeto como parâmentro para calcular pontos
+         - [x] Exibição do objeto na página HTML
+         - [ ] Botão para zerar todos os pontos
+         - [ ] Inputs para adicionar novos jogadores, com seus respectivos dados
 7. 
 8. 
 9. 
