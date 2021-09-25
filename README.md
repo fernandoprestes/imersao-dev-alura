@@ -53,7 +53,19 @@
          - [x] Exibição do objeto na página HTML
          - [ ] Botão para zerar todos os pontos
          - [ ] Inputs para adicionar novos jogadores, com seus respectivos dados
-7. 
-8. 
-9. 
-10. 
+7. :black_joker: Supertrunfo - Lógica do jogo
+      - [x] Criar cartas e atributos
+      - [x] Criar função de sortear cartas
+      - [x] Exibir atributos das cartas
+      - [x] Obter atributos e comparar
+8. :black_joker: Supertrunfo - Cartas do Jogo
+      - [x] Adicionar imagems e moldura
+      - [x] Exibir a carta do jogador e da maquina (imagem, nome e atributos)
+      - [x] Exibir o resultado
+9. :framed_picture: Figma, HTML e CSS
+      - [x] Figma
+      - [x] Entendendo o formato do HTML e CSS
+      - [x] Estruturar e estelizar o portifolio com HTML e CSS
+10. Portfólio
+      - [x] Criar tema claro e escuro
+      - [x] Finalizar o portfólio
