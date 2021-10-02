@@ -71,6 +71,11 @@ body {
   transition: 100ms transform ease-in-out;
 }
 
+.main-button:disabled{
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 .main-button:hover {
   transform: scale(1.01);
   color: #2243ff;

@@ -107,3 +107,9 @@ body {
   transform: scale(1.01);
   color: #2243ff;
 }
+
+.button.reset{
+  width: 50%;
+  padding: 8px;
+  margin: 1.5rem auto 0;
+}

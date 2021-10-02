@@ -31,7 +31,7 @@ body {
 }
 
 .container {
-  width: 85vw;
+  width: 1124px;
   margin: 0 auto;
   background: #eff;
   box-shadow: 5px 5px 0 #041432;
@@ -94,7 +94,7 @@ body {
 .projetos {
   background: linear-gradient(85deg, #499cfe 30%, #9cc8fc 100%);
   margin-top: 15px;
-  padding: 5px 15px;
+  padding: 5px 15px 25px;
   border-radius: 0 0 25px 25px;
   box-shadow: 2px 2px 0px #041432;
 }
@@ -110,13 +110,26 @@ body {
 .projetos-cards_item {
   width: 150px;
   text-align: center;
+  transition: transform .3s ease-in-out;
+}
+
+.projetos-cards_item:hover{
+  transform: scale(1.1);
 }
 
 .projetos-cards_item a {
   text-decoration: none;
+  font-weight: 700;
   color: #041432;
 }
 
 .projetos-cards_item img {
   width: 100%;
+}
+
+.footer{
+  font-size: 16px;
+  font-weight: bold;
+  color: #3468a7;
+  margin-top: 15px;
 }

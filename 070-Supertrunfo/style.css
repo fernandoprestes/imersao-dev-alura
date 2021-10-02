@@ -65,6 +65,11 @@ body {
   color: #2243ff;
 }
 
+.button:disabled{
+  opacity: .5;
+  cursor: not-allowed;
+}
+
 #btnJogar.button{
   width: 250px;
   margin-top: 15px;
